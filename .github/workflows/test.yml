@@ -11,5 +11,5 @@ jobs:
     - name: Commit files
       run: |
         git status
-        git push origin HEAD:master --follow-tags --force --tags master:develop
+        git push origin HEAD:master --follow-tags --force --tags
         
