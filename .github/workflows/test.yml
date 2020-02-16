@@ -6,8 +6,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    steps:
+    
     run: |
       uses: ad-m/github-push-action@master
     with:
