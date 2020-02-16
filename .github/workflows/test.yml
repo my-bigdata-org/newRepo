@@ -14,4 +14,5 @@ jobs:
         git status
         git push origin HEAD:master --follow-tags --force --tags
         mkdir repo1
+        ll
         
