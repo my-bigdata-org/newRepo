@@ -8,18 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: echo Hello, world!
-    inputs:
-      github_token:
-      required: true
-    repository:
-      default: 'https://github.com/rosran/trackerRepo.git'
-      required: false
-    branch:
-      default: 'master'
-      required: false
     run: |
       uses: ad-m/github-push-action@master
     with:
