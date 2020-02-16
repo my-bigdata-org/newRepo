@@ -1,0 +1,14 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Commit files
+      run: |
+        git push https://github.com/rosran/trackerRepo.git master:develop
+        
