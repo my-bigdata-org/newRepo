@@ -13,6 +13,6 @@ jobs:
       run: |
         git status
         git push origin HEAD:master --follow-tags --force --tags
-        cd /home/runner/work/newRepo/newRepo
-        ll
+        
+    
         
