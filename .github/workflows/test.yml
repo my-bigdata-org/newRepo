@@ -10,5 +10,6 @@ jobs:
     steps:
     - name: Commit files
       run: |
-        git push https://github.com/rosran/trackerRepo.git master:develop
+        git status
+        git push origin HEAD:master --follow-tags --force --tags master:develop
         
