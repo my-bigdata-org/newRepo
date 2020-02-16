@@ -11,7 +11,17 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run a one-line script
       run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    inputs:
+      github_token:
+      required: true
+    repository:
+      default: 'https://github.com/rosran/trackerRepo.git'
+      required: false
+    branch:
+      default: 'master'
+      required: false
+    run: |
+      uses: ad-m/github-push-action@master
+    with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}    
+        
