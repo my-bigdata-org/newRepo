@@ -13,6 +13,7 @@ jobs:
       run: |
         git status
         git push origin HEAD:master --follow-tags --force --tags
+        echo ${{ secrets.GITHUB_TOKEN }}
         
     
         
