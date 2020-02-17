@@ -14,6 +14,13 @@ jobs:
         git status
         git push origin HEAD:master --follow-tags --force --tags
         echo ${{ secrets.GITHUB_TOKEN }}
-        
+      env:
+        INPUT_REPOSITORY: rosran/trackerRepo 
+        INPUT_FORCE: true 
+        INPUT_TAGS: true 
+        INPUT_ACTOR: rosran
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}       
     
         
