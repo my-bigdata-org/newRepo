@@ -14,6 +14,7 @@ jobs:
     - name: push changes
       env:
         INPUT_REPOSITORY: rosran/trackerRepo
+        INPUT_BRANCH: develop 
         INPUT_FORCE: true 
         INPUT_TAGS: true 
         INPUT_ACTOR: rosran
