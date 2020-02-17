@@ -17,6 +17,6 @@ jobs:
         INPUT_FORCE: true 
         INPUT_TAGS: true 
         INPUT_ACTOR: rosran
-    - uses: ad-m/github-push-action@master
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}      
