@@ -8,10 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-      name: commit files
-    - run: |
+    - name: Commit files
+      run: |
         git status
-    - name: Push changes
-    - uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        git push origin HEAD:master --follow-tags --force --tags
