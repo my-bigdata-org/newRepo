@@ -14,13 +14,13 @@ jobs:
     - name: Commit files
       run: |
         git commit -m "Add changes" -a
-    - name: Push changes 
+    - name: Push changes
+    - uses: ad-m/github-push-action@master 
       env:
         INPUT_REPOSITORY: rosran/trackerRepo 
         INPUT_FORCE: true 
         INPUT_TAGS: true 
         INPUT_ACTOR: rosran
-    - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}       
     
