@@ -13,4 +13,4 @@ jobs:
         target_repo_url:
           git@github.com:rosran/trackerRepo.git
         ssh_private_key:
-            ${{ secrets.GITHUB_TOKEN }}
+            ${{ secrets.GITHUB_SSH_PRIVATE_KEY }}
